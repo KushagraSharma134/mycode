@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: all 0.5s;
+            /* border-radius: 10px; */
+            /* border-radius: 50%;  */
+            /* border: 2px solid black; */
+            /* we can also give different radius values for all the 4 different edges */
+            /* border-radius: 10px 20px 30px 40px; */
+            /* border-radius: 0px 50%; */
+            /* border-radius...higher its value, more the curved border */
+        
+        }
+       
+        .myButton{
+            background-color: pink;
+            color:white;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            
+        }
+        .myButton:hover{
+            background-color: aqua;
+            color:black;
+            border-radius: 0px;
+            /* width: 200px; */
+            /* height: 200px; */
+        }
+        .box:hover{
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            border-radius: 0px 50%;
+            transform: rotate(90deg);
+            
+        }
+        .myimage{
+            width: 200px;
+            height: 200px;
+            border-radius:50%;
+            transition: all 2s;
+        }
+        .myimage:hover{
+           
+            /* transform: scale(0.5); */
+            /* rotate and scale won't work together! */
+            transform: scaleY(2);
+            transform: scaleX(1.5);
+            transform: rotate(360deg);
+        }
+        a{
+            /* border: 1px solid pink; */
+            background-color: #FF457F;
+            color: white;
+            text-decoration: none;
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <br>
+    <button class ="myButton">
+        Home 
+    </button>
+    <br><br>
+    <div class = "box">
+
+    </div>
+   
+    <img src="https://thumbs.dreamstime.com/b/tiger-portrait-horizontal-11392212.jpg" class="myimage">
+
+    </div>
+    <br><br>
+    <a href="#" class="myButton">Hello</a>
+</body>
+</html>
