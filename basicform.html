@@ -1,0 +1,72 @@
+<!-- improvise this form over the weekened time period!! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="name">Enter your name:</label>
+        <!-- placeholder for blurr text in typing space -->
+        <!-- required used to make filling a particular field compulsory -->
+        <input required type="text" id="name" placeholder="Enter your full name">
+        <!-- label's "for" attribute value is same as input's "id" value -->
+        <br><br>
+
+        <label for="pass">Password: </label>
+        <input type="password" id="pass">
+        <br><br>
+        <label for="mail">Email</label>
+        <input type="email" id="mail">
+        <br><br>
+        <input type="datetime-local">
+        <br><br>
+        <!-- we have to tell using "multiple accept which type of files we want, we can ignore this if we want to accept any type of file" -->
+        <input type="file" multiple accept="image/*">
+        <br><br>
+        <input width="80px" height="20px" type="image" src="https://thumbs.dreamstime.com/b/tiger-portrait-horizontal-11392212.jpg">
+        <br><br>
+        <input type="radio" id="male" name="Gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender">
+        <label for="female">Female</label>
+
+        <br><br>
+        <input value="1" type="checkbox" id="male" name="Gender">
+        <label for="male">Male</label>
+        <input value="1" type="checkbox" id="female" name="Gender">
+        <label for="female">Female</label>
+        <br><br>
+        <select>
+            <!-- value attribute is the one which goes to the database -->
+        <optgroup label="Transport">
+            <option value="1">Car</option>
+            <option value="2">Bus</option>
+            <option value="3" disabled>Truck</option>
+        </optgroup>
+        <optgroup label="Transport type 2">
+            <option value="1">Udne wali Car</option>
+            <option value="2">Udne wali Bus</option>
+            <option value="3" disabled>Udne wala Truck</option>
+        </optgroup>
+
+        <br><br><br>
+        <textarea></textarea>
+
+
+        </select>
+
+
+
+
+
+
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+    
+</body>
+</html>
